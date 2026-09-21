@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/32465774/README.md)
+[README.md](https://github.com/user-attachments/files/32471028/README.md)
 <div align="center">
 
 # 📇 Contact Manager API
@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Node.js-18%2B-21262d?style=for-the-badge&logo=node.js&logoColor=5FA04E" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Node.js-16%2B-21262d?style=for-the-badge&logo=node.js&logoColor=5FA04E" alt="Node.js" />
   <img src="https://img.shields.io/badge/Express-5.2.1-21262d?style=for-the-badge&logo=express&logoColor=ffffff" alt="Express" />
   <img src="https://img.shields.io/badge/MongoDB-Mongoose%209.10-21262d?style=for-the-badge&logo=mongodb&logoColor=47A248" alt="MongoDB" />
   <img src="https://img.shields.io/badge/JWT-Auth%20Protected-21262d?style=for-the-badge&logo=jsonwebtokens&logoColor=FFB400" alt="JWT" />
@@ -109,7 +109,7 @@ Ensure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/senmith-01/contactManagerAPI.git
-cd contactManagerApp/backEnd
+cd contactManagerAPI/backEnd
 ```
 
 ### 2. Install Dependencies
@@ -356,27 +356,27 @@ The application uses a centralized error-handling middleware that intercepts thr
 ## 📂 Project Structure
 
 ```bash
-contactManagerApp/
-└── backEnd/
-    ├── config/
-    │   └── dbConnection.js         # MongoDB connection setup using Mongoose
-    ├── constants.js                # HTTP status code definitions
-    ├── controller/
-    │   ├── contactController.js    # Contact CRUD operations & access control
-    │   └── userController.js       # User registration, login & profile logic
-    ├── middleware/
-    │   ├── errorHandler.js         # Centralized error response formatter
-    │   └── validateTokenHandler.js # JWT verification & user context injector
-    ├── models/
-    │   ├── contactModel.js         # Contact schema with User relation
-    │   └── userModel.js            # User schema with unique email constraint
-    ├── routes/
-    │   ├── contactRoutes.js        # Contact routing & middleware attachment
-    │   └── userRoutes.js           # User authentication routes
-    ├── .env                        # Environment configurations (ignored in git)
-    ├── .gitignore                  # Git ignore rules
-    ├── package.json                # Project dependencies and npm scripts
-    └── server.js                   # Application entry point & Express server
+backEnd/
+├── config/
+│   └── dbConnection.js         # MongoDB connection setup using Mongoose
+├── constants.js                # HTTP status code definitions
+├── controller/
+│   ├── contactController.js    # Contact CRUD operations & access control
+│   └── userController.js       # User registration, login & profile logic
+├── middleware/
+│   ├── errorHandler.js         # Centralized error response formatter
+│   └── validateTokenHandler.js # JWT verification & user context injector
+├── models/
+│   ├── contactModel.js         # Contact schema with User relation
+│   └── userModel.js            # User schema with unique email constraint
+├── routes/
+│   ├── contactRoutes.js        # Contact routing & middleware attachment
+│   └── userRoutes.js           # User authentication routes
+├── .env                        # Environment configurations (ignored in git)
+├── .gitignore                  # Git ignore rules
+├── package.json                # Project dependencies and npm scripts
+├── README.md                   # Project documentation
+└── server.js                   # Application entry point & Express server
 ```
 
 <br/>
